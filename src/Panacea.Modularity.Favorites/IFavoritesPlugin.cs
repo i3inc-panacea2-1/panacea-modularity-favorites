@@ -8,8 +8,9 @@ namespace Panacea.Modularity.Favorites
 {
     public interface IFavoritesPlugin : IPlugin
     {
+        event EventHandler FavoritesChanged;
         Task FavoriteNotify(string pluginName, string id);
         Task FavoriteRemove(string pluginName, string id);
-        List<T> GetFavorites<T>(string pluginName);
+        Task<List<T>> GetFavoritesAsync<T>(string pluginName);
     }
 }
