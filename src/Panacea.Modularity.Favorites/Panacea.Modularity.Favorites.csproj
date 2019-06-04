@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FriendlyNameAttribute.cs" />
+    <Compile Include="IFavoritesManager.cs" />
     <Compile Include="IFavoritesPlugin.cs" />
     <Compile Include="IHasFavoritesPlugin.cs" />
     <Compile Include="IUpdatesFavorites.cs" />
