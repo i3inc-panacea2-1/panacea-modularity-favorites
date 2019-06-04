@@ -5,12 +5,7 @@ namespace Panacea.Modularity.Favorites
 {
     public static class PanaceaServicesExtensions
     {
-        public static IFavoritesPlugin GetFavoritesPlugin(this PanaceaServices core)
-        {
-            return core.PluginLoader.GetPlugin<IFavoritesPlugin>();
-        }
-
-        public static bool TryGetFavoritesPlugin(this PanaceaServices core, out IFavoritesPlugin plugin)
+        public static bool TryGetFavoritesPlugin(this PanaceaServices core, out IFavoritesManager plugin)
         {
             plugin = null;
             var favorites = core.PluginLoader.GetPlugins<IFavoritesPlugin>().FirstOrDefault();
@@ -18,7 +13,7 @@ namespace Panacea.Modularity.Favorites
             {
                 return false;
             }
-            plugin = favorites;
+            plugin = favorites.GetManager();
             return true;
         }
     }
