@@ -47,6 +47,7 @@
     <Compile Include="FriendlyNameAttribute.cs" />
     <Compile Include="IFavoritesPlugin.cs" />
     <Compile Include="IHasFavoritesPlugin.cs" />
+    <Compile Include="IUpdatesFavorites.cs" />
     <Compile Include="PanaceaServicesExtensions.cs" />
     <Compile Include="PluginFavorites.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
