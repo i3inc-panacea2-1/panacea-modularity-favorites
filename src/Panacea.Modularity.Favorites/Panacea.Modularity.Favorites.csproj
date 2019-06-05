@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BoolToFavoriteConverter.cs" />
     <Compile Include="FriendlyNameAttribute.cs" />
     <Compile Include="IFavoritesManager.cs" />
     <Compile Include="IFavoritesPlugin.cs" />
